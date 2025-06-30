@@ -29,21 +29,6 @@ The system follows the **Perception-Reasoning-Action (PRA)** pattern:
 - **Results Display**: Presents analysis results in structured format
 - **Metadata Tracking**: Logs execution time, sources analyzed, and search strategy used
 
-## Modules
-
-- main.js: Runs everything; handles CLI, agents, and report generation.
-- config.js: Central config for knobs/dials to turn.
-- agent.js: The heart of the operation. Runs the Perceive -> Reason -> Reflect lifecycle per city; handles retries, steps, and analysis.
-- ai.js: Functions that handle talking to LLMs.
-- search.js: Uses Bright Data SERP API to fetch web search results.
-- cache.js: Simple filesystem-based cache for API responses to reduce cost and latency.
-- context.js: Stores each agent's central working memory.
-- strategies.js: Strategy management, adaptation.
-- scoring.js: City scoring logic.
-- reports.js: Generates the final markdown report.
-- utils.js: Project-wide helper functions (e.g., file ops, delays).
-
-
 ## Prerequisites
 
 1. **Node.js** (v14 or higher)
